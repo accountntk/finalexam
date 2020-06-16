@@ -1,0 +1,15 @@
+def bubble_sort(nums):
+ swap = True
+while (swap):
+    swap = False
+    for i in range(len(nums) - 1):
+        if nums[i] > nums[i + 1]:
+            nums[i], nums[i + 1] = nums[i + 1], nums[i]
+            swap = True
+
+n = int(input("n= "))
+X = []
+for i in range(n):
+    X.append(int(input()))
+BubbleSort(X)
+print(X)
